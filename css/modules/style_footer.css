@@ -1,0 +1,53 @@
+/*Le code ci-dessous correspond à mes rajouts de code - Johan*/
+/*CSS du footer*/
+
+/***Bas du site internet***/
+.footer {
+  background-color: var(--main-bg-color);
+  /*Pour le rectangle gris du Footer*/
+}
+.element_footer {
+  display: table-cell;
+  /*Pour la mise en page du footer*/
+}
+.li_footer {
+  list-style-type: none;
+  margin: 15px;
+  padding-right: 200px;
+  font-size: 16px;
+  /*Pour enlever les points générés par les "li"*/
+}
+.ul {
+  margin: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  /*Pour enlever les points générés par les "li"*/
+}
+/*Fin de mon code*/ /*Johan*/
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .li_footer {
+    padding-right: 80px;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*Contient tous les éléments du footer pour les mobiles*/
+  .footer {
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    padding-right: 60px;
+  }
+  .element_footer {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  .li_footer {
+    padding-right: 30px;
+  }
+}

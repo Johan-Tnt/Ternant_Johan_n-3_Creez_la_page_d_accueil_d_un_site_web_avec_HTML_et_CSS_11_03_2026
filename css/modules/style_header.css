@@ -1,0 +1,89 @@
+/*Le code ci-dessous correspond à mes rajouts de code - Johan*/
+/*CSS du header*/
+
+/***Haut du site internet***/
+.header {
+  display: flex;
+  justify-content: space-between;
+  /*align-self: stretch;*/
+}
+.li_header {
+  list-style-type: none;
+  padding-right: 20px;
+  padding-left: 50px;
+  /*Pour enlever les points générés par les "li"*/
+}
+.space_nav {
+  height: 35px;
+  /*L'espacement entre les deux éléments header en haut à droites*/
+}
+
+.bordure_nav:hover {
+  border-top: 2px solid var(--main-color);
+  color: var(--main-color);
+  /*Trait + couleur du trait bouton nav header avec couleur bleu*/
+}
+.marge_logo {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  /*L'espacement entre le logo et le titre headline*/
+}
+.menu_nav {
+  width: 328.601px;
+  padding: 0px 25px;
+  /*L'espacement entre les deux boutons de navigation partie 1*/
+}
+.buttons_menu {
+  display: flex;
+  align-items: flex-end;
+  /*L'espacement entre les deux boutons de navigation partie 2*/
+}
+.flex_nav {
+  display: flex;
+}
+/*Fin de mon code*/ /*Johan*/
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  /*None tablets*/
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*Contient tous les éléments du header pour les mobiles*/
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .marge_logo {
+    margin-bottom: 30px;
+  }
+  .li_header {
+    list-style-type: none;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .menu_nav {
+    padding-bottom: 70px;
+    width: 100%;
+    padding: initial;
+  }
+  .bordure_nav:hover {
+    border-top: none;
+    justify-content: center;
+  }
+  .size_lien_mobile {
+    width: 100%;
+    border-bottom: 2px solid var(--main-bg-color);
+  }
+  .buttons_menu {
+    padding-bottom: 15px;
+    justify-content: center;
+  }
+  .size_lien_mobile:hover {
+    width: 100%;
+    border-bottom: 2px solid var(--main-color);
+    border-top: none;
+  }
+}

@@ -1,0 +1,438 @@
+/*Le code ci-dessous correspond à mes rajouts de code - Johan*/
+/*CSS restant du rajout de code*/
+
+/***Body du site internet***/
+
+/*Barre de navigation du site internet Search + Personnalisation*/
+.headline_space {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  /*L'espacement des 2 éléments "trouver hébergement" + "en plein centre"*/
+}
+.desktop_none {
+  display: none;
+  /*Faire disparaitre la loupe en desktop responsive mobile*/
+}
+.info_group {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  /*Permet l'alignement et l'espacement des contenant*/ /*Recherche, Filtres, etc*/
+}
+/*Code pour la barre de recherche*/
+.bordure_search {
+  width: 400px;
+  border-radius: 10px;
+  border: 0.5px solid var(--main-bg-color);
+  /*Regroupe la totalité de la barre de recherche*/
+}
+.back_grey {
+  background-color: var(--main-bg-color);
+  /*Couleur de fond du point de localisation de barre de recherche*/
+}
+.icon_size {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+  /*Permet la mise en page de la localisation de barre de recherche*/
+}
+.recherche {
+  width: 230px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  /*Regroupe la mise en forme de la barre de recherche*/
+}
+.bordure_none {
+  border: none;
+  /*Enlève la bordure autour de Marseille*/
+}
+.padding_search {
+  padding-left: 24px;
+  /*L'espacement de la bordure de Marseille*/
+}
+.button_search {
+  height: 50px;
+  width: 120px;
+  color: var(--main-bg-color);
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  /*Regroupe la mise en forme du mot recherche*/
+}
+.back_blue {
+  background-color: var(--main-color);
+  border: var(--main-color);
+  /*Couleur de fond du mot recherche*/
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Alignements de la barre de recherche*/
+}
+/*Boutons Filtres + Filtre*/
+.filter {
+  display: flex;
+  height: 50px;
+  padding: 4px 19px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  border: 2px solid var(--grey-tint-2);
+  background-color: var(--white);
+  /*"transition" pour effet progressif de la couleur lors du survole de la souris*/
+  transition:
+    background-color 200ms,
+    color 200ms;
+  /*Bouton pour filtrer la rechecher du site internet*/
+}
+.filter_desktop {
+  display: flex;
+  /*Pour aligner le mot "filtres"*/
+}
+.filter_bar {
+  /*Englobe la totalité de la barre des filtres*/
+  display: flex;
+  gap: 15px;
+  padding-left: 80px;
+  padding-left: 15px;
+}
+.filter_bar_title {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+}
+.space_filter {
+  display: flex;
+  align-items: center;
+}
+.button_rounded {
+  font-weight: bold;
+  font-size: 17px;
+  /*Bouton effet arrondie*/
+}
+.button_effet_color:hover {
+  font-weight: 800;
+  border-width: 3px;
+  background: var(--filter-bg-color);
+  border-radius: 25px;
+  /*Bouton effet survole avec couleur bleu*/
+}
+.filter_mobile {
+  display: flex;
+  gap: 10px;
+}
+/*Barre d'infos "i"*/
+.info_bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 35px;
+  /*Alignement entre i et infos*/
+}
+.circle_i {
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  min-width: 24px;
+  height: 24px;
+  /*Pour faire apparaitre le cercle gris autour du "i" de la barre d'infos*/
+}
+/***Pour les blocs Hébergements***/
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*Pour aligner les blocs hébergements et activités*/
+}
+.flex_column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*Pour aligner les blocs activités*/
+}
+/*Pour mettre les images des hebergements sur deux colonnes*/
+.article_hebergements {
+  width: 33%;
+}
+.alignements_hebergements {
+  display: flex;
+  padding: 10px;
+  /*Pour aligner les photos*/
+}
+/*Pour les blocs hébergements*/
+.card_2 {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 100%;
+}
+.img_hebergements {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid var(--white);
+  align-self: stretch;
+  object-fit: cover;
+  /*Pour les images et le cadre blanc*/
+}
+.description_img {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /*Pour l'espacement entre les mots des hébergements*/
+}
+.space_hebergements {
+  padding-left: 10px;
+  /*Espacement de la description de chaque hébergements*/
+}
+.black_liens {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 30px;
+  /*Espacements + taille + gras noir de afficher dans hébergements*/
+}
+.space_title_hebergements {
+  padding-bottom: 30px;
+  /*Espacements de hébergements à Marseille*/
+}
+/***Pour les blocs Activités***/
+.activites_space {
+  height: 10px;
+  padding-bottom: 5px;
+  padding-top: 65px;
+  padding-left: 30px;
+  /*Pour l'espacement de activités*/
+}
+.bloc_activites {
+  height: 570px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-self: stretch;
+  /*Réglage bloc*/
+}
+.cube_activites {
+  width: 23%;
+  border-radius: 20px;
+  box-shadow: 15px 15px 15px 0px var(--main-bg-color);
+  /*Fin réglage bloc*/
+}
+.titre_activites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+  width: 95px;
+  /*Titres des activités hauteur + alignement*/
+}
+.img_activites {
+  background-position: center;
+  width: 100%;
+  height: 380px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  /*Taille des images activités*/
+}
+/*Mise en page du texte sous les blocs activités*/
+.text_space1 {
+  padding-right: 185px;
+  /*Espacements à droite du texte activités*/
+}
+.text_space2 {
+  padding-right: 125px;
+  /*Espacements à droite du texte activités*/
+}
+.text_space3 {
+  padding-right: 60px;
+  /*Espacements à droite du texte activités*/
+}
+.text_space_all {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 18px;
+  /*Espacements du texte activités*/
+}
+/*Fin de mon code*/ /*Johan*/
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  /*Contient tous les éléments du bloc filter pour les tablettes*/
+  .filter_bar {
+    gap: 20px;
+    height: 50px;
+    padding-left: 1px;
+  }
+  .space_filter {
+    padding-bottom: 25px;
+    /*L'espacement entre le filtre et les boutons*/ /*Valider*/
+  }
+  .filter_mobile {
+    display: flex;
+    gap: 10px;
+  }
+  .filter_desktop {
+    display: block;
+    /*Permemt d'aligner les boutons du filter*/
+  }
+  /*Contient tous les éléments du bloc activités pour les tablettes*/
+  .bloc_activites {
+    height: 400px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /*Réglage bloc*/
+  }
+  .cube_activites {
+    height: 270px;
+    /*Fin réglage bloc*/
+  }
+  .img_activites {
+    height: 200px;
+    /*Taille des images activités*/
+  }
+  /*Mise en page du texte sous les blocs activités*/
+  .text_space_all {
+    padding-bottom: 10px;
+  }
+  .text_space1 {
+    padding-right: initial;
+    /*Espacements à droite du texte activités*/
+  }
+  .text_space2 {
+    padding-right: initial;
+    /*Espacements à droite du texte activités*/
+  }
+  .text_space3 {
+    padding-right: initial;
+    /*Espacements à droite du texte activités*/
+  }
+  .flex_column_center {
+    align-items: initial;
+    /*Pour aligner les blocs activités*/
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*Contient tous les éléments du body pour les mobiles*/
+  /*Pour la barre de recherche mobile*/
+  .headline_space {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .bordure_search {
+    width: auto;
+    border: none;
+    align-self: stretch;
+    padding: 0 20px;
+  }
+  .recherche {
+    height: 50px;
+    border-bottom: 1px solid var(--main-bg-color);
+    border-top: 1px solid var(--main-bg-color);
+    width: 100%;
+  }
+  .button_search {
+    width: 50px;
+    border-radius: 15px;
+    border-bottom: 1px solid var(--main-bg-color);
+    border-top: 1px solid var(--main-bg-color);
+  }
+  .desktop_none {
+    display: block;
+    /*Fait apparaitre la loupe dans le mobile*/
+  }
+  .mobile_none {
+    display: none;
+    /*Retire le mot recherche dans le mobile*/
+  }
+  /*Barre de recherche*/
+
+  /*Barre de filtres*/
+  .filter_bar_title {
+    padding-left: 10px;
+  }
+  .filter_bar {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+  .filter_mobile {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button_rounded {
+    width: 162px;
+    font-size: 14px;
+  }
+  .filter_desktop {
+    display: block;
+    /*Permet d'aligner les boutons du filter*/
+  }
+  .space_filter {
+    padding-left: 5%;
+  }
+  .info_bar {
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+  /*Hébergements*/
+  .article_hebergements {
+    width: 100%;
+  }
+  .space_title_hebergements {
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+  }
+  .card_2 {
+    height: 207px;
+  }
+  .img_hebergements {
+    height: 110px;
+  }
+  .space_hebergements {
+    padding-left: 10px;
+  }
+  .black_liens {
+    justify-content: center;
+    padding-right: 203px;
+    padding-top: 5px;
+  }
+  /*Activités*/
+  .activites_space {
+    padding-left: 0;
+    justify-content: center;
+    display: flex;
+    padding-right: 50px;
+    font-size: 22px;
+  }
+  .flex_between {
+    display: flex;
+    flex-direction: column;
+  }
+  .bloc_activites {
+    height: auto;
+    gap: 15px;
+    padding-bottom: 65px;
+  }
+  .cube_activites {
+    width: 100%;
+    height: auto;
+  }
+  .img_activites {
+    height: 141px;
+  }
+  .text_space_all {
+    padding-bottom: 20px;
+  }
+}
