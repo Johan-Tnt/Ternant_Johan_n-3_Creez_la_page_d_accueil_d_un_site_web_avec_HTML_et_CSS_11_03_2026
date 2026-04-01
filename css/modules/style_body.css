@@ -223,14 +223,6 @@
   box-shadow: 15px 15px 15px 0px var(--main-bg-color);
   /*Fin réglage bloc*/
 }
-.titre_activites {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 5px;
-  width: 95px;
-  /*Titres des activités hauteur + alignement*/
-}
 .img_activites {
   background-position: center;
   width: 100%;
